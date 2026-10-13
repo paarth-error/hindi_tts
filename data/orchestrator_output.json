@@ -1,0 +1,78 @@
+{
+  "story_preview": "\nएक घने जंगल में एक छोटा शेर का बच्चा रहता था। अचानक शाम को जोर से बिजली कड़की और तेज बारिश होने लगी।\nशेर का बच्चा कांपने लगा और उसने अपनी मां से फुसफुसाकर कहा, \"मां, मुझे बहुत डर लग रहा है!\"\nमां शेरन...",
+  "total_turns": 6,
+  "turns": [
+    {
+      "turn_id": 1,
+      "speaker": "Narrator",
+      "text": "एक घने जंगल में एक छोटा शेर का बच्चा रहता था।",
+      "emotion_tag": "Neutral",
+      "acoustic_cues": {
+        "volume": "Normal",
+        "pace": "Normal",
+        "pitch": "Normal"
+      },
+      "style_prompt": "Narrate calmly, setting the scene."
+    },
+    {
+      "turn_id": 2,
+      "speaker": "Narrator",
+      "text": "अचानक शाम को जोर से बिजली कड़की और तेज बारिश होने लगी।",
+      "emotion_tag": "Dramatic/Scary",
+      "acoustic_cues": {
+        "volume": "High",
+        "pace": "Fast",
+        "pitch": "High"
+      },
+      "style_prompt": "Speak with urgency and tension, as if describing a sudden storm."
+    },
+    {
+      "turn_id": 3,
+      "speaker": "Narrator",
+      "text": "शेर का बच्चा कांपने लगा और उसने अपनी मां से फुसफुसाकर कहा,",
+      "emotion_tag": "Dramatic/Scary",
+      "acoustic_cues": {
+        "volume": "High",
+        "pace": "Fast",
+        "pitch": "High"
+      },
+      "style_prompt": "Narrate with tension, as the child starts to tremble."
+    },
+    {
+      "turn_id": 4,
+      "speaker": "Shere ka bachcha",
+      "text": "मां, मुझे बहुत डर लग रहा है!",
+      "emotion_tag": "Fear",
+      "acoustic_cues": {
+        "volume": "Normal",
+        "pace": "Normal",
+        "pitch": "High"
+      },
+      "style_prompt": "Speak with a trembling, fearful tone."
+    },
+    {
+      "turn_id": 5,
+      "speaker": "Narrator",
+      "text": "मां शेरनी ने उसे सहलाते हुए प्यार से कहा,",
+      "emotion_tag": "Comforting",
+      "acoustic_cues": {
+        "volume": "Normal",
+        "pace": "Normal",
+        "pitch": "Normal"
+      },
+      "style_prompt": "Narrate soothingly, as the mother comforts."
+    },
+    {
+      "turn_id": 6,
+      "speaker": "Shere ni",
+      "text": "डरो मत मेरे बच्चे, जब तक मैं तुम्हारे साथ हूं, कोई तुम्हें नुकसान नहीं पहुंचा सकता।",
+      "emotion_tag": "Comforting",
+      "acoustic_cues": {
+        "volume": "Normal",
+        "pace": "Normal",
+        "pitch": "Normal"
+      },
+      "style_prompt": "Speak calmly and reassuringly."
+    }
+  ]
+}

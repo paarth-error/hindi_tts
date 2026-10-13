@@ -1,0 +1,14 @@
+# Secret tokens — kabhi commit mat karna
+.env
+
+# Python environment
+env/
+__pycache__/
+*.pyc
+
+# Large data files — git mein mat daalo, use cloud storage
+data/01_raw_audio/*.wav
+data/02_isolated_vocals/*.wav
+data/03_diarized_segments/
+data/04_transcripts/
+data/temp_demucs/
