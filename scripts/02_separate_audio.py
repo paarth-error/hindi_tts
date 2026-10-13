@@ -47,6 +47,12 @@ def isolate_clean_vocals() -> None:
 
         print(f"[*] Demucs processing: {filename}")
 
+        # Skip if already processed
+        final_path = os.path.join(VOCALS_DIR, f"{raw_name}_dry_vocal.wav")
+        if os.path.exists(final_path):
+            print(f"[~] Already processed, skipping: {filename}\n")
+            continue
+
         # demucs CLI:
         #   --two-stem vocals  → sirf vocals + no_vocals stems banao
         #   -n htdemucs        → Hybrid Transformer model (best quality)
