@@ -75,18 +75,18 @@ def download_hindi_audio(urls: list[str], output_path: str) -> None:
             "-ac", "1",
         ],
         "outtmpl": os.path.join(output_path, "%(title)s.%(ext)s"),
-        "ignoreerrors":  True,   # skip unavailable videos
-        "nooverwrites":  True,   # skip already downloaded files
+        "ignoreerrors":  True,
+        "nooverwrites":  True,
         "playlistend":   PLAYLIST_LIMIT,
+
+        # Cookies — fixes 403 Forbidden on cloud servers (Colab etc.)
+        "cookiefile": os.path.join(BASE_DIR, "..", "cookies.txt") if os.path.exists(
+            os.path.join(BASE_DIR, "..", "cookies.txt")) else None,
 
         # Filter by duration
         "match_filter": yt_dlp.utils.match_filter_func(
             f"duration >= {MIN_DURATION} & duration <= {MAX_DURATION}"
         ),
-
-        # Progress display
-        "quiet":        False,
-        "no_warnings":  False,
     }
 
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
