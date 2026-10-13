@@ -36,19 +36,16 @@ YOUTUBE_SOURCES = [
     "https://youtu.be/DJpmuUT0liI",   # गर्मियों की दुल्हन
     "https://youtu.be/l67JebGFskc",   # बुद्धू राम की ट्रेन यात्रा
 
-    # ── Playlists (add playlist URLs below) ───────────────────────────────────
-    # Ssoftoons Hindi — large playlist of Hindi kahaniya
-    "https://youtube.com/playlist?list=PLhSN612TBIy-4dAzIZrNAsFwD1ZHgXUO2&si=XzHdO3zTJoRc1fvT",
+    # ── Existing playlists ────────────────────────────────────────────────────
+    "https://youtube.com/playlist?list=PLhSN612TBIy-4dAzIZrNAsFwD1ZHgXUO2&si=XzHdO3zTJoRc1fvT",  # Pintu Bhaiya
+    "https://youtube.com/playlist?list=PLGYShKhywmbrE2JhGnahfVHq16ufnG-2r&si=nFADXVU072QOFGkP",   # Horror Stories
 
-    # Moral Stories Hindi
-    "https://youtube.com/playlist?list=PLGYShKhywmbrE2JhGnahfVHq16ufnG-2r&si=nFADXVU072QOFGkP",
-
-    # Kahani Junction
-    # "https://www.youtube.com/playlist?list=PLxxxxxxx",
+    # ── Additional playlists for more data ────────────────────────────────────
+    "https://youtube.com/playlist?list=PLbXMnynKombJG276hJWtX_8097MWk95fO&si=KRC-_bwc8mUHNzrt",    # Ssoftoons Hindi
 ]
 
 # ── How many videos to pull from each playlist ────────────────────────────────
-PLAYLIST_LIMIT = 10   # 3 playlists × 10 = 30 videos total
+PLAYLIST_LIMIT = 15   # per playlist 15 videos
 
 # ── Minimum video duration to download (seconds) ─────────────────────────────
 # Skip very short clips (< 3 min) — not useful for TTS
